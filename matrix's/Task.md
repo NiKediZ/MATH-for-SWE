@@ -46,3 +46,14 @@ Lisättiin main funktioon neljä apufunktiota ```int x = kysyArvo('x')``` jolloi
 ```std::array<std::array<int, 2>, 2> matrix = {{{a, b}, {c, d}}};``` 
 ### Toinen tehtävä
 Toisena tehtävänä on tehdä funktio joka laskee 2x2 matriisin käänteismatriisin Craamerin säännön avulla.
+
+### 2x2-matriisin käänteismatriisi (Cramerin sääntö)
+
+Käänteismatriisi $A^{-1}$ lasketaan kaavalla:
+
+$$A^{-1} = \frac{1}{\text{det}(A)} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$$
+
+missä determinantti $\text{det}(A) = a \cdot d - b \cdot c \neq 0$.
+
+Jos matriisin determinantti on 0, käänteismatriisia ei ole olemassa, koska jakolaskun tulos voi olla desimaaliluku. 
+
